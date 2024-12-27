@@ -51,6 +51,5 @@ public class Qademo extends TestBase {
                 .verifyModalResults("Hobbies",Hobbies )
                 .verifyModalResults("Address",CurrentAddress)
                 .verifyModalResults("State and City",State_City );
-        sleep(10000);
     }
 }
