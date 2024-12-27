@@ -7,3 +7,5 @@ video
 out
 allure-results
 .DS_Store
+gradlew
+gradlew.bat
