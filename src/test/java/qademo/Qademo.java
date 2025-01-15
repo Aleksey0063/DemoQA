@@ -1,6 +1,5 @@
 package qademo;
 import org.junit.jupiter.api.Test;
-import static com.codeborne.selenide.Selenide.*;
 
 
 public class Qademo extends TestBase {
