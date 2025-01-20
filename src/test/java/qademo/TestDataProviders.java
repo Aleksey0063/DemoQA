@@ -27,6 +27,7 @@ public class TestDataProviders {
     void SelenideSiteShouldHaveButtons (qademo.Locale locale, List<String> buttons){
     open("https://ru.selenide.org");
     $$("#languages").findBy(text(locale.name())).click();
+   // $$("#languages").findBy(text("EN")).click();
     $$(".main-menu-pages a").filter(visible).findBy(text("Quick start")).shouldBe(visible);
     $$(".main-menu-pages a").filter(visible).shouldHave(texts(buttons));
     }
