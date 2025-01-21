@@ -2,15 +2,19 @@ package qademo;
 import org.junit.jupiter.api.Test;
 
 
-public class Qademo extends TestBase {
+import static utils.RandomUtils.randomEmail;
+import static utils.RandomUtils.randomString;
+
+
+public class Qademo extends TestBase{
 
     @Test
     void testRegistrationPage() {
 
-        String FirstName = "Aleksei";
-        String LastName = "Ivanov";
+        String FirstName = randomString(10);
+        String LastName = randomString(10);
         String FullName = FirstName + " " + LastName;
-        String Email = "test@test.com";
+        String Email = randomEmail();
         String PhoneNumber = "8923483745";
         String CurrentAddress = "samara";
         String Gender = "Male";
