@@ -2,6 +2,7 @@ package pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import pages.components.Calendar;
 import pages.components.RegistrationModalResults;
 
@@ -22,7 +23,7 @@ public class RegistrationPage {
             uploadFile = $("#uploadPicture"),
             submitButton = $("#submit");
 
-
+   @Step("открыть страницу")
     public RegistrationPage openPage() {
         open("/automation-practice-form");
         sleep(5000);
@@ -30,12 +31,12 @@ public class RegistrationPage {
         Selenide.executeJavaScript("$('#RightSide_Advertisement').remove()");
         return this;
     }
-
+    @Step("заполнить имя")
     public RegistrationPage fillFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
     }
-
+    @Step("заполнить фамилию")
     public RegistrationPage fillLastName(String value) {
         lastNameInput.setValue(value);
         return this;

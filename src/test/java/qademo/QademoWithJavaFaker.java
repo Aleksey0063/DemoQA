@@ -39,15 +39,10 @@ public class QademoWithJavaFaker extends TestBase{
 //        String State = "NCR";
 //        String City = "Delhi";
 //        String State_City = State + " " + City;
-        step("открыть страницу", ()->{
-            registrationPage.openPage();
-        });
-//        registrationPage.openPage()
-        step("заполни имя", ()->{
-            registrationPage.fillFirstName(testData.FirstName);
-        });
-//                .fillFirstName(testData.FirstName)
-        registrationPage.fillLastName(testData.LastName)
+
+registrationPage.openPage()
+                .fillFirstName(testData.FirstName)
+                .fillLastName(testData.LastName)
                 .setGender(testData.Email)
                 .fillPhoneNumber(testData.PhoneNumber)
                 .fillEmail(testData.Email)
