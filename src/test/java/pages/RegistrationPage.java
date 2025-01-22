@@ -41,27 +41,28 @@ public class RegistrationPage {
         lastNameInput.setValue(value);
         return this;
     }
-
+    @Step("заполнить электронную почту")
     public RegistrationPage fillEmail(String value) {
         emailInput.setValue(value);
         return this;
     }
-
+    @Step("заполнить адрес")
     public RegistrationPage fillCurrentAddress(String value) {
         currentAddressInput.setValue(value);
         return this;
     }
-
+    @Step("заполнить номер телефона")
     public RegistrationPage fillPhoneNumber(String value) {
         userPhoneNumberInput.setValue(value);
         return this;
     }
+    @Step("заполнить дату рождения")
     public RegistrationPage setBirthDate(String Month, String Year, String Day) {
         $("#dateOfBirthInput").click();
         calendar.setDate(Month, Year, Day);
         return this;
     }
-
+    @Step("указать пол")
     public RegistrationPage setGender(String value) {
         if (value.equals("Male")) {
             $("#gender-radio-1").parent().click();
@@ -72,11 +73,12 @@ public class RegistrationPage {
         }
         return this;
     }
+    @Step("указать предмет")
     public RegistrationPage fillSubject(String value) {
         subjectInput.setValue(value).pressEnter();
         return this;
     }
-
+    @Step("указать хобби")
     public RegistrationPage setHobbies(String value) {
          if (value.equals("Sports")) {
             $("#hobbies-checkbox-1").parent().click();
@@ -87,28 +89,34 @@ public class RegistrationPage {
         }
         return this;
     }
+    @Step("загрузить картинку")
     public RegistrationPage uploadPicture(String value) {
         uploadFile.uploadFromClasspath(value);
         return this;
     }
+    @Step("заполнить штат")
     public RegistrationPage fillState(String value) {
         $("#state").click();
         $("#stateCity-wrapper").$(byText(value)).click();
         return this;
     }
+    @Step("заполнить город")
     public RegistrationPage fillCity(String value) {
         $("#city").click();
         $("#stateCity-wrapper").$(byText(value)).click();
         return this;
     }
+    @Step("отправить форму")
     public RegistrationPage submitForm() {
         submitButton.click();
         return this;
     }
+    @Step("проверить модальное окно")
     public RegistrationPage registrationPageVerifyModalAppears() {
         registrationModalResults.regitrationPageModalAppears();
         return this;
     }
+    @Step("проверить результаты")
     public RegistrationPage verifyModalResults(String Label, String Value){
         registrationModalResults.verifyResults(Label,Value);
         return this;
