@@ -9,6 +9,7 @@ import pages.TestData;
 
 import java.util.Locale;
 
+import static io.qameta.allure.Allure.step;
 import static utils.RandomUtils.randomEmail;
 import static utils.RandomUtils.randomString;
 
@@ -38,10 +39,15 @@ public class QademoWithJavaFaker extends TestBase{
 //        String State = "NCR";
 //        String City = "Delhi";
 //        String State_City = State + " " + City;
-
-        registrationPage.openPage()
-                .fillFirstName(testData.FirstName)
-                .fillLastName(testData.LastName)
+        step("открыть страницу", ()->{
+            registrationPage.openPage();
+        });
+//        registrationPage.openPage()
+        step("заполни имя", ()->{
+            registrationPage.fillFirstName(testData.FirstName);
+        });
+//                .fillFirstName(testData.FirstName)
+        registrationPage.fillLastName(testData.LastName)
                 .setGender(testData.Email)
                 .fillPhoneNumber(testData.PhoneNumber)
                 .fillEmail(testData.Email)
