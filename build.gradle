@@ -5,10 +5,15 @@ plugins {
 
 allure {
     report {
-        version.set("2.30.0")
+        version.set("2.19.0")
     }
     adapter {
         aspectjWeaver.set(true)// обработка аннотации @Step
+        frameworks{
+            junit5{
+                adapterVersion.set("2.19.0")
+            }
+        }
     }
 }
 
@@ -37,4 +42,10 @@ dependencies {
 
 test {
     useJUnitPlatform{}
+}
+
+task simple_test(type: Test){
+    useJUnitPlatform {
+        includeTags("Simple")
+    }
 }
