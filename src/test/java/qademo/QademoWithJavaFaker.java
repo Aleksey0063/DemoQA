@@ -1,6 +1,9 @@
 package qademo;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.javafaker.Faker;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.TestData;
 
@@ -9,11 +12,12 @@ import java.util.Locale;
 import static utils.RandomUtils.randomEmail;
 import static utils.RandomUtils.randomString;
 
-
+@Tag("Simple")
 public class QademoWithJavaFaker extends TestBase{
 
     @Test
     void testRegistrationPage() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
         TestData testData = new TestData();
 //        Faker faker = new Faker();
 //        Faker faker = new Faker(new Locale("ru"));
