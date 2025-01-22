@@ -17,7 +17,7 @@ public class QademoWithJavaFaker extends TestBase{
 
     @Test
     void testRegistrationPage() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+//        SelenideLogger.addListener("allure", new AllureSelenide());
         TestData testData = new TestData();
 //        Faker faker = new Faker();
 //        Faker faker = new Faker(new Locale("ru"));
