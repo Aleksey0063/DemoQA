@@ -116,7 +116,7 @@ public class RegistrationPage {
         registrationModalResults.regitrationPageModalAppears();
         return this;
     }
-    @Step("проверить результаты")
+    @Step("проверить результаты {Label}")
     public RegistrationPage verifyModalResults(String Label, String Value){
         registrationModalResults.verifyResults(Label,Value);
         return this;

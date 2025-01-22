@@ -2,7 +2,9 @@ package qademo;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.github.javafaker.Faker;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.TestData;
@@ -15,7 +17,12 @@ import static utils.RandomUtils.randomString;
 
 @Tag("Simple")
 public class QademoWithJavaFaker extends TestBase{
-
+    @Feature("Регистрация пользователя")
+//  @Story("Creating of an issue in repository")
+    @Owner("aldm")
+    @Severity(SeverityLevel.BLOCKER)
+//    @Link(value = "Github", url = "https://testing.github.com")
+    @DisplayName("Проверка страницы регистрации пользователя")
     @Test
     void testRegistrationPage() {
 //        SelenideLogger.addListener("allure", new AllureSelenide());
