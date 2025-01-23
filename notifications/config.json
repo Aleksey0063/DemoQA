@@ -1,0 +1,20 @@
+{
+  "base": {
+    "logo": "",
+    "project": "some project",
+    "environment": "qa.quru",
+    "comment": "any, @aleksei_dmitriev_1",
+    "reportLink": "https://jenkins.autotests.cloud",
+    "language": "ru",
+    "allureFolder": "build/reports/allure-report/",
+    "enableChart": false,
+    "enableSuitesPublishing": false,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y",
+    "chat": "-1002258300047",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}
