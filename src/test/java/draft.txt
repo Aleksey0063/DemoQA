@@ -1,8 +1,8 @@
 telegram username: AldmNotification_bot
 telegram token: 7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y
-
+                7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8UOtlN4Y
 Chat id: "id":-1002258300047
-
+https://api.telegram.org/bot7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y/getUpdates
 
 curl -X POST \
      -H 'Content-Type: application/json' \

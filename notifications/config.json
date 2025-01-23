@@ -1,18 +1,18 @@
 {
   "base": {
     "logo": "",
-    "project": "some project",
+    "project": "qa.quru TA",
     "environment": "qa.quru",
     "comment": "any, @aleksei_dmitriev_1",
     "reportLink": "https://jenkins.autotests.cloud",
     "language": "ru",
-    "allureFolder": "build/reports/allure-report/",
-    "enableChart": false,
+    "allureFolder": "build/reports/allure-report/allureReport",
+    "enableChart": true,
     "enableSuitesPublishing": false,
     "customData": {}
   },
   "telegram": {
-    "token": "7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y",
+    "token": "7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8UOtlN4Y",
     "chat": "-1002258300047",
     "replyTo": "",
     "templatePath": "/templates/telegram.ftl"
