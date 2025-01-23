@@ -40,8 +40,9 @@ dependencies {
     )
 }
 
-test {
+tasks.withType(Test) {
     useJUnitPlatform{}
+    systemProperties(System.getProperties())
 }
 
 task simple_test(type: Test){
@@ -49,3 +50,4 @@ task simple_test(type: Test){
         includeTags("Simple")
     }
 }
+
