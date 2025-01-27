@@ -12,8 +12,8 @@
     "customData": {}
   },
   "telegram": {
-    "token": "7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8UOtlN4Y",
-    "chat": "-1002258300047",
+    "token": "",
+    "chat": "",
     "replyTo": "",
     "templatePath": "/templates/telegram.ftl"
   }

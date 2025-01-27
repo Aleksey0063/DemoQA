@@ -1,14 +1,5 @@
-telegram username: AldmNotification_bot
-telegram token: 7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y
-                7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8UOtlN4Y
-Chat id: "id":-1002258300047
-https://api.telegram.org/bot7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y/getUpdates
+telegram username:
+telegram token:
+Chat id:
+https://api.telegram.org/bot_token/getUpdates
 
-curl -X POST \
-     -H 'Content-Type: application/json' \
-     -d '{"chat_id": "-1002258300047", "text": "This is a test from curl", "disable_notification": true}' \
-     https://api.telegram.org/bot7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8U0tlN4Y/sendMessage
-
-Fatch bot updates and look for the chat id:
-curl https://api.telegram.org/bot$token/getUpdates | jq .message.chat.id
-curl https://api.telegram.org/bot7255064280:AAESi8ufaiAfqfzBFoeDY7h-LbA8UOtlN4Y/getUpdates | jq .message.chat.id
